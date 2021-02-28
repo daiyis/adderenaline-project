@@ -1,1 +1,11 @@
-<button nz-button nzType="primary">Go!</button>
+<div class="buttons">
+  <button nz-button nzType="primary" (click)="open()">Submission 1</button>
+  <button nz-button nzType="primary" (click)="open()">Submission 2</button>
+  <button nz-button nzType="primary" (click)="open()">Submission 3</button>
+</div>
+
+<app-submission-drawer
+  *ngIf="submissionDrawerVisible"
+  (visibleChange)="closeDrawer($event)"
+  [submissionId]="1"
+></app-submission-drawer>

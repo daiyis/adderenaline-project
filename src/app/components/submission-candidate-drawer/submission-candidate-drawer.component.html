@@ -1,0 +1,13 @@
+<nz-drawer
+  [nzClosable]="true"
+  [nzOffsetX]="500"
+  [nzVisible]="true"
+  nzPlacement="right"
+  nzTitle="Candidate Details"
+  (nzOnClose)="closeSelf()"
+  nzWidth="650px"
+>
+  <ng-container *nzDrawerContent>
+    <div *ngIf="candidate">{{ candidate.name }}</div>
+  </ng-container>
+</nz-drawer>

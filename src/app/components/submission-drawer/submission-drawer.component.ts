@@ -29,7 +29,7 @@ export class SubmissionDrawerComponent implements OnInit {
   subscriptions: Subscription[] = [];
 
   companyInitials: string = 'LI';
-  companyThumbnailUrl: string = '../../../assets/logo-ipsum-thumbnail.jpg';
+  companyThumbnailUrl: string = 'assets/logo-ipsum-thumbnail.jpg';
 
   companyTitle: string = 'Lorem Ipsum';
 

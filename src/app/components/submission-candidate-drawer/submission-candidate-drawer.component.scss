@@ -1,0 +1,44 @@
+@import "../../../styles/_variables.scss";
+
+.detail-view-header {
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 -1px 0 0 $jobadder-grey-sky-3;
+  height: 130px;
+  color: $jobadder-grey-ink-2;
+  font-family: $jobadder-font-family;
+  letter-spacing: -0.2px;
+  line-height: 20px;
+  background-color: $jobadder-grey-sky-1;
+
+  .candidate-name {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .subTitle {
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  .approval-buttons {
+    .ant-btn {
+      margin-right: 16px;
+      width: 80px;
+    }
+  }
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.details-body {
+  margin-right: 16px;
+  margin-left: 16px;
+}

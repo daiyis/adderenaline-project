@@ -7,6 +7,8 @@ export interface Submission {
 export interface Candidate {
   candidateId: number;
   name: string;
+  initials: string;
+  thumbnailUrl: string;
   submittedAt: Date;
   rating: number;
 }

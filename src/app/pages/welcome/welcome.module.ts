@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgZorroAntdModule } from 'src/app/nz-zorro.module';
+import { HeadshotComponent } from '../../components/headshot/headshot.component';
 import { SubmissionCandidateDrawerComponent } from '../../components/submission-candidate-drawer/submission-candidate-drawer.component';
 import { SubmissionDrawerComponent } from '../../components/submission-drawer/submission-drawer.component';
 
@@ -19,6 +20,7 @@ import { DashboardHeaderComponent } from '../../components/dashboard-header/dash
     SubmissionCandidateDrawerComponent,
     SubmissionDashboardComponent,
     DashboardHeaderComponent,
+    HeadshotComponent,
   ],
   exports: [WelcomeComponent],
 })

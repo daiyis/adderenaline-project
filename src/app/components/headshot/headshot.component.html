@@ -1,0 +1,74 @@
+<div
+  class="headshot-area"
+  [ngClass]="{ 'quick-view': quickViewEnabled, edit: editEnabled }"
+>
+  <div
+    class="headshot"
+    *ngIf="imageThumbnailUrl && !imageNotFound; else defaultHeadshotTemplate"
+  >
+    <img
+      [src]="imageThumbnailUrl"
+      [alt]="initials"
+      (error)="onImageLoadError()"
+    />
+    <i
+      *ngIf="editEnabled"
+      nz-icon
+      class="app-icon full-view"
+      nzType="eye"
+      nzTheme="outline"
+      (click)="isFullViewVisible = true"
+    ></i>
+  </div>
+  <!-- <i class="app-icon headshot quick-view-icon" nz-icon nzType="ja:quick-view" (click)="click.emit()"></i> -->
+  <ng-template #defaultHeadshotTemplate>
+    <div *ngIf="editEnabled; else readOnlyDefaultTpl" class="headshot">
+      <nz-upload
+        class="avatar-uploader"
+        nzType="drag"
+        [nzAction]="actionUrl"
+        nzName="avatar"
+        [nzShowUploadList]="false"
+        (nzChange)="fileChanged($event)"
+      >
+        <div class="headshot initials">
+          <span>{{ initials }}</span>
+        </div>
+        <div class="upload">
+          <i class="upload-icon" nz-icon nzType="plus"></i>
+          <div class="ant-upload-text">Upload</div>
+        </div>
+      </nz-upload>
+    </div>
+  </ng-template>
+
+  <ng-template #readOnlyDefaultTpl>
+    <div class="headshot initials">
+      <span>{{ initials }}</span>
+    </div>
+  </ng-template>
+</div>
+
+<nz-modal
+  [nzMask]="false"
+  [nzWidth]="500"
+  [(nzVisible)]="isFullViewVisible"
+  nzWrapClassName="full-view"
+  (nzOnCancel)="isFullViewVisible = false"
+>
+  <div>
+    <img src="{{ imageUrl }}" width="500px" />
+  </div>
+  <div *nzModalFooter class="delete-picture">
+    <button
+      nz-popconfirm
+      nzPopconfirmTitle="Are you sure you want to delete this profile picture?"
+      nzPopconfirmPlacement="left"
+      (nzOnConfirm)="deleteImage()"
+      nz-button
+      nzType="link"
+    >
+      <i class="clickable" nz-icon nzType="outline:delete"></i>Delete Picture
+    </button>
+  </div>
+</nz-modal>

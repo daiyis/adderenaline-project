@@ -1,17 +1,29 @@
 <nz-drawer
-  [nzClosable]="true"
+  [nzClosable]="false"
   [nzVisible]="true"
   nzPlacement="right"
   (nzOnClose)="closeSelf()"
-  nzWidth="500px"
+  nzWidth="400px"
 >
   <ng-container *nzDrawerContent>
-    <div class="drawer-container small r-p-view-submissions">
+    <div class="drawer-container small r-c-view-submissions">
       <div class="drawer-header">
-        <div class="detail-view-header r-s-header">
-          <div class="ml-16">
-            <div>LOGO</div>
-            <div>Project Manager</div>
+        <span class="header-text">Submission Details</span>
+      </div>
+
+      <div class="detail-view-header r-s-header">
+        <app-headshot
+          class="headshot-48 ml-24"
+          [initials]="companyInitials"
+          [imageThumbnailUrl]="companyThumbnailUrl"
+          [imageUrl]="companyThumbnailUrl"
+        ></app-headshot>
+        <div class="ml-16">
+          <div *ngIf="jobTitle">
+            {{ jobTitle }}
+          </div>
+          <div class="subTitle" *ngIf="companyTitle">
+            {{ companyTitle }}
           </div>
         </div>
       </div>
@@ -42,7 +54,12 @@
             </td>
             <td>{{ candidate.submittedAt | date: "shortDate" }}</td>
             <td>
-              <nz-rate [ngModel]="candidate.rating" nzAllowHalf></nz-rate>
+              <nz-rate
+                class="app-rate"
+                [ngModel]="candidate.rating"
+                nzAllowHalf
+                [nzAllowClear]="false"
+              ></nz-rate>
             </td>
           </tr>
         </tbody>

@@ -19,6 +19,7 @@ import { SubmissionService } from '../../services/submission.service';
 })
 export class SubmissionDrawerComponent implements OnInit {
   @Input() submissionId: number;
+  @Input() jobTitle: string;
   @Output() visibleChange = new EventEmitter<boolean>();
 
   submissionCandidateDrawerVisible: boolean = false;
@@ -27,6 +28,11 @@ export class SubmissionDrawerComponent implements OnInit {
 
   subscriptions: Subscription[] = [];
 
+  companyInitials: string = '3M';
+  companyThumbnailUrl: string = 'https://logodix.com/logo/570868.jpg';
+
+  companyTitle: string = '3M Australia Pty Ltd';
+
   listOfColumns: ColumnItem[] = [
     {
       name: 'Name',
@@ -34,7 +40,7 @@ export class SubmissionDrawerComponent implements OnInit {
       sortFn: (a: Candidate, b: Candidate) => a.name.localeCompare(b.name),
     },
     {
-      name: 'Date submitted',
+      name: 'Submitted',
     },
     {
       name: 'Rating',

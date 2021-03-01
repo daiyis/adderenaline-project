@@ -6,22 +6,25 @@
     nzBreakpoint="md"
     [(nzCollapsed)]="isCollapsed"
     [nzTrigger]="null"
+    nzTheme="light"
   >
     <div class="sidebar-logo">
-      <!-- <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo" /> -->
-      <h1>Submissions portal</h1>
+      <img src="../assets/logo-ipsum.svg" alt="logo ipsum" />
     </div>
-    <ul
-      nz-menu
-      nzTheme="dark"
-      nzMode="inline"
-      [nzInlineCollapsed]="isCollapsed"
-    >
+    <div class="search">
+      <nz-input-group [nzPrefix]="prefixIconSearch">
+        <input type="text" nz-input placeholder="Search" />
+      </nz-input-group>
+      <ng-template #prefixIconSearch>
+        <i nz-icon nzType="search"></i>
+      </ng-template>
+    </div>
+    <ul nz-menu nzTheme="light" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
       <li nz-menu-item nzMatchRouter>
-        <a routerLink="/welcome">Account</a>
+        <a routerLink="/welcome"><i nz-icon nzType="user" nzTheme="outline"></i> Account</a>
       </li>
       <li nz-menu-item nzMatchRouter>
-        <a routerLink="/contact">Contact</a>
+        <a routerLink="/contact"><i nz-icon nzType="phone" nzTheme="outline"></i> Contact</a>
       </li>
     </ul>
   </nz-sider>
@@ -29,11 +32,7 @@
     <nz-header>
       <div class="app-header">
         <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
-          <i
-            class="trigger"
-            nz-icon
-            [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-          ></i>
+          <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
         </span>
       </div>
     </nz-header>

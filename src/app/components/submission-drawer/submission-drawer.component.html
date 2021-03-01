@@ -1,0 +1,58 @@
+<nz-drawer
+  [nzClosable]="true"
+  [nzVisible]="true"
+  nzPlacement="right"
+  (nzOnClose)="closeSelf()"
+  nzWidth="500px"
+>
+  <ng-container *nzDrawerContent>
+    <div class="drawer-container small r-p-view-submissions">
+      <div class="drawer-header">
+        <div class="detail-view-header r-s-header">
+          <div class="ml-16">
+            <div>LOGO</div>
+            <div>Project Manager</div>
+          </div>
+        </div>
+      </div>
+      <nz-table
+        #submissionTable
+        *ngIf="submission"
+        [nzData]="submission.candidates"
+      >
+        <thead>
+          <tr>
+            <th
+              *ngFor="let column of listOfColumns"
+              [nzSortOrder]="column.sortOrder"
+              [nzSortFn]="column.sortFn"
+              [nzSortDirections]="column.sortDirections"
+              [nzFilterMultiple]="column.filterMultiple"
+              [nzFilters]="column.listOfFilter"
+              [nzFilterFn]="column.filterFn"
+            >
+              {{ column.name }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let candidate of submissionTable.data">
+            <td (click)="showCandidateDrawer(candidate.candidateId)">
+              {{ candidate.name }}
+            </td>
+            <td>{{ candidate.submittedAt | date: "shortDate" }}</td>
+            <td>
+              <nz-rate [ngModel]="candidate.rating" nzAllowHalf></nz-rate>
+            </td>
+          </tr>
+        </tbody>
+      </nz-table>
+    </div>
+  </ng-container>
+</nz-drawer>
+<app-submission-candidate-drawer
+  *ngIf="submissionCandidateDrawerVisible"
+  (visibleChange)="closeDrawer($event)"
+  [submissionId]="submissionId"
+  [candidateId]="selectedCandidateId"
+></app-submission-candidate-drawer>

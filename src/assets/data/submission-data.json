@@ -1,0 +1,20 @@
+[
+  {
+    "submissionId": 1,
+    "submittedAt": "2021-03-01",
+    "candidates": [
+      {
+        "candidateId": 101,
+        "name": "Clark K",
+        "submittedAt": "2021-03-01",
+        "rating": 4
+      },
+      {
+        "candidateId": 102,
+        "name": "Leo Dai",
+        "submittedAt": "2021-03-02",
+        "rating": 5
+      }
+    ]
+  }
+]

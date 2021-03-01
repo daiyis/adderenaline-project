@@ -1,0 +1,43 @@
+@import "../../../styles/_variables.scss";
+
+.drawer-container {
+  nz-table {
+    width: 100%;
+  }
+}
+
+.drawer-header {
+  .header-text {
+    flex: 1;
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: $jobadder-grey-ink-1;
+    letter-spacing: 0.11px;
+    line-height: 1.2;
+  }
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.detail-view-header {
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 -1px 0 0 $jobadder-grey-sky-3;
+  height: 72px;
+  color: $jobadder-grey-ink-2;
+  font-family: $jobadder-font-family;
+  letter-spacing: -0.2px;
+  line-height: 20px;
+  background-color: $jobadder-grey-sky-1;
+  font-weight: 600;
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.ml-16 {
+  margin-left: 16px;
+}

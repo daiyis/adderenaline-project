@@ -1,0 +1,125 @@
+$base-font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+$jobadder-font-family: 'Lato', sans-serif;
+$jobadder-grey-96: #f5f5f5;
+$jobadder-grey-90: #e6e6e6;
+$jobadder-grey-81: #cfcfcf;
+$jobadder-grey-78: #c7c7c7;
+$jobadder-grey-60: #999999;
+$jobadder-grey-46: #767676;
+$jobadder-grey-27: #454545;
+$jobadder-grey-100: #f7f8fb;
+$jobadder-grey-102: #eeeeee;
+$jobadder-purple: #aa26d0;
+$jobadder-pink: #ec008c;
+$jobadder-blue: #00c2ee;
+$jobadder-green: #a0d468;
+$jobadder-bluegrey-dark: #464f5e;
+$linktext-color: $jobadder-blue;
+$linktext-color-inverted: white;
+$link-color: #0089be;
+$click-scale: 0.9;
+$hover-scale: 1.1;
+
+/* venom - JobAdder Design */
+
+/* Colors */
+
+$jobadder-grey-ink-1: #222b3d;
+$jobadder-grey-ink-2: #424957;
+$jobadder-grey-ink-3: #666e7d;
+$jobadder-grey-ink-4: #8c94a3;
+
+$jobadder-grey-sky-1: #f7f8fa;
+$jobadder-grey-sky-2: #f0f2f5;
+$jobadder-grey-sky-3: #dfe1e6;
+$jobadder-grey-sky-4: #ccd0d9;
+
+$jobadder-blue-1: #1971c2;
+$jobadder-blue-2: #1864ab;
+$jobadder-blue-3: #1c7ed6;
+$jobadder-blue-4: #e7f5ff;
+
+$jobadder-green-1: #2f9e44;
+$jobadder-green-2: #2b8a3e;
+$jobadder-green-3: #37b24d;
+$jobadder-green-4: #ebfbee;
+$jobadder-green-5: #049a4e;
+
+$jobadder-red-4: #fff5f5;
+
+$jobadder-status-background: #e9f9dd;
+$jobadder-status-text: #0e831e;
+
+$jobadder-success: #2f9e44;
+$jobadder-success-dark: #2b8a3e;
+$jobadder-success-light: #37b24d;
+$jobadder-success-background: #ebfbee;
+
+$jobadder-yellow-light-25: rgba(245, 159, 0, 0.25);
+$jobadder-yellow: #f08c00;
+$jobadder-yellow-dark: #e67700;
+$jobadder-yellow-light: #f59f00;
+$jobadder-yellow-background: #fff9db;
+
+$jobadder-error: #e03131;
+$jobadder-error-dark: #c92a2a;
+$jobadder-error-light: #f03e3e;
+$jobdder-disabled-25: rgba(0, 0, 0, 0.25);
+
+$jobadder-negative: #f56162;
+
+$black: #000;
+$white: #fff;
+
+$jobadder-mask-background: rgba(0, 0, 0, 0.65);
+
+$jobadder-stage-complete: #94c940;
+$jobadder-stage-inactive: #8e929c;
+$jobadder-stage-inprogress: #d8a23c;
+$jobadder-stage-started: #eb058c;
+
+$jobadder-stars: #ffc23e;
+
+$shadow-0: 0 0 0 0 rgba($jobadder-grey-ink-1, 0.05);
+$shadow-1: 0 1px 0 0 rgba($jobadder-grey-ink-1, 0.05);
+$shadow-2: 0 2px 2px 0 rgba($jobadder-grey-ink-1, 0.1);
+$shadow-3: 0 2px 8px 0 rgba($jobadder-grey-ink-1, 0.1);
+
+$border-radius: 3px;
+$border-radius-circle: 50%;
+$border-radius-round: 1000px;
+
+$line-height-base: 1.428571429;
+
+$jobadder-candidate: #66a80f;
+$jobadder-contact: $jobadder-yellow;
+$jobadder-company: #c2255c;
+$jobadder-joborder: #1971c2;
+$jobadder-jobapplication: #7d59ae;
+$jobadder-placement: #3fbeb1;
+$jobadder-candidatesubmission: #66a80f;
+$jobadder-candidatefloat: #66a80f;
+
+$jobadder-status-open: #0e831e;
+$jobadder-status-closed: #f56162;
+$jobadder-status-inactive: #222b3d;
+$jobadder-status-open-background: #e9f9dd;
+$jobadder-status-closed-background: #ffedeb;
+$jobadder-status-inactive-background: #f0f2f5;
+
+$jobadder-candidate-bg: $jobadder-green-5;
+$jobadder-contact-bg: $jobadder-yellow;
+$jobadder-company-bg: #c2255c;
+$jobadder-job-bg: #00c2f4;
+
+$jobadder-preference-color: #0e831e;
+$jobadder-preference-background: #e9f9dd;
+$jobadder-exclusion-color: #c2255c;
+$jobadder-exclusion-background: #f8e4e7;
+
+$drawer-large: 888px;
+$drawer-large-md: 777px;
+$drawer-large-sm: 666px;
+$drawer-medium: 720px;
+$drawer-small: 545px;
+$drawer-small-sm: 445px;

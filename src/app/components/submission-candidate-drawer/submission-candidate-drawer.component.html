@@ -1,13 +1,42 @@
 <nz-drawer
-  [nzClosable]="true"
-  [nzOffsetX]="500"
+  [nzClosable]="false"
+  [nzOffsetX]="400"
   [nzVisible]="true"
   nzPlacement="right"
-  nzTitle="Candidate Details"
   (nzOnClose)="closeSelf()"
   nzWidth="650px"
 >
   <ng-container *nzDrawerContent>
-    <div *ngIf="candidate">{{ candidate.name }}</div>
+    <div *ngIf="candidate" class="drawer-container r-c-submission-candidate">
+      <div class="detail-view-header r-s-header">
+        <app-headshot
+          class="headshot-72 ml-24"
+          [initials]="candidate.initials"
+          [imageThumbnailUrl]="candidate.thumbnailUrl"
+          [imageUrl]="candidate.thumbnailUrl"
+        ></app-headshot>
+        <div class="ml-16">
+          <div class="candidate-name">
+            {{ candidate.name }}
+          </div>
+          <div class="subTitle">
+            Submitted on
+            {{ candidate.submittedAt | date: "longDate" }}
+          </div>
+          <div class="approval-buttons">
+            <button nz-button nzType="default">Yes</button>
+            <button nz-button nzType="default">Maybe</button>
+            <button nz-button nzType="default">No</button>
+          </div>
+        </div>
+      </div>
+      <div class="details-body">
+        <nz-tabset [nzTabBarGutter]="16">
+          <nz-tab nzTitle="Candidate Details">details here</nz-tab>
+          <nz-tab nzTitle="Documents"><div>document here</div></nz-tab>
+          <nz-tab nzTitle="Feedback"><div>feedback here</div></nz-tab>
+        </nz-tabset>
+      </div>
+    </div>
   </ng-container>
 </nz-drawer>

@@ -6,12 +6,16 @@
       {
         "candidateId": 101,
         "name": "Clark K",
+        "initials": "CK",
+        "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
         "submittedAt": "2021-03-01",
         "rating": 4
       },
       {
         "candidateId": 102,
         "name": "Leo Dai",
+        "initials": "LD",
+        "thumbnailUrl": "https://w7.pngwing.com/pngs/723/817/png-transparent-lionhead-rabbit-lion-face-mammal-animals-cat-like-mammal-thumbnail.png",
         "submittedAt": "2021-03-02",
         "rating": 5
       }

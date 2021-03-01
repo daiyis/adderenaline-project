@@ -28,10 +28,10 @@ export class SubmissionDrawerComponent implements OnInit {
 
   subscriptions: Subscription[] = [];
 
-  companyInitials: string = '3M';
-  companyThumbnailUrl: string = 'https://logodix.com/logo/570868.jpg';
+  companyInitials: string = 'LI';
+  companyThumbnailUrl: string = '../../../assets/logo-ipsum-thumbnail.jpg';
 
-  companyTitle: string = '3M Australia Pty Ltd';
+  companyTitle: string = 'Lorem Ipsum';
 
   listOfColumns: ColumnItem[] = [
     {
@@ -50,19 +50,14 @@ export class SubmissionDrawerComponent implements OnInit {
     },
   ];
 
-  constructor(
-    private submissionService: SubmissionService,
-    private cdRef: ChangeDetectorRef
-  ) {}
+  constructor(private submissionService: SubmissionService, private cdRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.subscriptions.push(
-      this.submissionService
-        .getSubmissionById(this.submissionId)
-        .subscribe((submission) => {
-          this.submission = submission;
-          this.cdRef.markForCheck();
-        })
+      this.submissionService.getSubmissionById(this.submissionId).subscribe((submission) => {
+        this.submission = submission;
+        this.cdRef.markForCheck();
+      })
     );
   }
 

@@ -21,7 +21,7 @@
           </div>
           <div class="subTitle">
             Submitted on
-            {{ candidate.submittedAt | date: "longDate" }}
+            {{ candidate.submittedAt | date: 'longDate' }}
           </div>
           <div class="approval-buttons">
             <button nz-button nzType="default">Yes</button>
@@ -32,7 +32,27 @@
       </div>
       <div class="details-body">
         <nz-tabset [nzTabBarGutter]="16">
-          <nz-tab nzTitle="Candidate Details">details here</nz-tab>
+          <nz-tab nzTitle="Candidate Details">
+            <h3>Candidate Summary</h3>
+            <div class="description mb-16">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <h3>Experience</h3>
+            <div class="description mb-16">8 years experience as Project Management in a digital environment</div>
+            <h3>Salary Expectation</h3>
+            <div class="description mb-16">Seeking a salary of $160000</div>
+            <h3>Strengths</h3>
+            <div class="description">Flight</div>
+            <div class="description">Superhuman strength</div>
+            <div class="description">X-ray vision</div>
+            <div class="description">Heat vision</div>
+            <div class="description mb-16">Not suited to a Kyptonite heavy environment</div>
+          </nz-tab>
           <nz-tab nzTitle="Documents"><div>document here</div></nz-tab>
           <nz-tab nzTitle="Feedback"><div>feedback here</div></nz-tab>
         </nz-tabset>

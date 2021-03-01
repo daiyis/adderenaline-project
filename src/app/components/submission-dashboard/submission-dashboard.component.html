@@ -1,0 +1,33 @@
+<div class="header"><app-dashboard-header></app-dashboard-header></div>
+
+<nz-table #jobList [nzData]="listOfJobs" nzSize="small">
+  <thead>
+    <tr>
+      <th class="table-header">Job Title</th>
+      <th class="table-header">Days Open</th>
+      <th class="table-header">Total Candidates</th>
+      <th class="table-header">Submitted</th>
+      <th class="table-header">Interviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of jobList.data">
+      <td>{{ data.jobTitle }}</td>
+      <td>{{ data.daysOpen }}</td>
+      <td [ngClass]="{ started: data.interviews === 0 && data.submitted === 0 && data.totalCandidates > 0 }">
+        <span *ngIf="data.totalCandidates > 0">{{ data.totalCandidates }}</span>
+      </td>
+      <td
+        class="cursor-pointer"
+        [ngClass]="{ submitted: data.interviews === 0 && data.submitted > 0 }"
+        (click)="openSubmission(data.jobOrderID)"
+      >
+        <a *ngIf="data.submitted > 0">{{ data.submitted }} </a>
+        <span *ngIf="data.submitted > 0" class="unread-flag"></span>
+      </td>
+      <td [ngClass]="{ interview: data.interviews > 0 }">
+        <span *ngIf="data.interviews > 0">{{ data.interviews }}</span>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

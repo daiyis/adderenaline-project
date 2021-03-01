@@ -1,0 +1,35 @@
+.header {
+  margin-bottom: 48px;
+}
+
+.table-header {
+  text-transform: uppercase;
+}
+
+.started {
+  border-right: 4px solid rgb(235, 5, 140);
+  background: linear-gradient(270deg, rgba(235, 5, 140, 0.1) 0%, rgba(235, 5, 140, 0) 100%);
+}
+.submitted {
+  border-right: 4px solid rgb(216, 162, 60);
+  background: linear-gradient(270deg, rgba(216, 162, 60, 0.1) 0%, rgba(216, 162, 60, 0) 100%);
+}
+
+.interview {
+  border-right: 4px solid rgb(102, 168, 15);
+  background: linear-gradient(270deg, rgba(102, 168, 15, 0.1) 0%, rgba(102, 168, 15, 0) 100%);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+span.unread-flag {
+  margin-left: 2px;
+  margin-bottom: 9px;
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 100px;
+  background-color: #1971c2;
+}

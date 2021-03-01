@@ -8,6 +8,8 @@ import { SubmissionDrawerComponent } from '../../components/submission-drawer/su
 import { WelcomeRoutingModule } from './welcome-routing.module';
 
 import { WelcomeComponent } from './welcome.component';
+import { SubmissionDashboardComponent } from '../../components/submission-dashboard/submission-dashboard.component';
+import { DashboardHeaderComponent } from '../../components/dashboard-header/dashboard-header.component';
 
 @NgModule({
   imports: [WelcomeRoutingModule, NgZorroAntdModule, CommonModule, FormsModule],
@@ -15,6 +17,8 @@ import { WelcomeComponent } from './welcome.component';
     WelcomeComponent,
     SubmissionDrawerComponent,
     SubmissionCandidateDrawerComponent,
+    SubmissionDashboardComponent,
+    DashboardHeaderComponent,
   ],
   exports: [WelcomeComponent],
 })

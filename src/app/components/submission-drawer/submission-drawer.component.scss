@@ -1,4 +1,4 @@
-@import "../../../styles/_variables.scss";
+@import '../../../styles/_variables.scss';
 
 ::ng-deep .ant-drawer-body {
   margin: 0;
@@ -51,6 +51,14 @@
 
 .ml-16 {
   margin-left: 16px;
+}
+
+th {
+  text-transform: uppercase;
+}
+
+.candidate-name {
+  cursor: pointer;
 }
 
 ::ng-deep nz-rate {

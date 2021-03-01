@@ -1,10 +1,4 @@
-<nz-drawer
-  [nzClosable]="false"
-  [nzVisible]="true"
-  nzPlacement="right"
-  (nzOnClose)="closeSelf()"
-  nzWidth="400px"
->
+<nz-drawer [nzClosable]="false" [nzVisible]="true" nzPlacement="right" (nzOnClose)="closeSelf()" nzWidth="400px">
   <ng-container *nzDrawerContent>
     <div class="drawer-container small r-c-view-submissions">
       <div class="drawer-header">
@@ -27,11 +21,7 @@
           </div>
         </div>
       </div>
-      <nz-table
-        #submissionTable
-        *ngIf="submission"
-        [nzData]="submission.candidates"
-      >
+      <nz-table #submissionTable *ngIf="submission" [nzData]="submission.candidates">
         <thead>
           <tr>
             <th
@@ -49,17 +39,12 @@
         </thead>
         <tbody>
           <tr *ngFor="let candidate of submissionTable.data">
-            <td (click)="showCandidateDrawer(candidate.candidateId)">
+            <td (click)="showCandidateDrawer(candidate.candidateId)" class="candidate-name">
               {{ candidate.name }}
             </td>
-            <td>{{ candidate.submittedAt | date: "shortDate" }}</td>
+            <td>{{ candidate.submittedAt | date: 'shortDate' }}</td>
             <td>
-              <nz-rate
-                class="app-rate"
-                [ngModel]="candidate.rating"
-                nzAllowHalf
-                [nzAllowClear]="false"
-              ></nz-rate>
+              <nz-rate class="app-rate" [ngModel]="candidate.rating" nzAllowHalf [nzAllowClear]="false"></nz-rate>
             </td>
           </tr>
         </tbody>

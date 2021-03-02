@@ -1,6 +1,8 @@
 [
   {
     "submissionId": 1,
+    "jobOrderId": 1,
+    "jobTitle": "Project Manager",
     "submittedAt": "2021-03-01",
     "candidates": [
       {
@@ -13,8 +15,88 @@
       },
       {
         "candidateId": 102,
-        "name": "Leo Dai",
-        "initials": "LD",
+        "name": "Libby H",
+        "initials": "LH",
+        "thumbnailUrl": "https://w7.pngwing.com/pngs/723/817/png-transparent-lionhead-rabbit-lion-face-mammal-animals-cat-like-mammal-thumbnail.png",
+        "submittedAt": "2021-03-02",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "submissionId": 2,
+    "jobOrderId": 2,
+    "jobTitle": "Business Analyst",
+    "submittedAt": "2021-03-01",
+    "candidates": [
+      {
+        "candidateId": 1011,
+        "name": "Nick G",
+        "initials": "NG",
+        "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
+        "submittedAt": "2021-03-01",
+        "rating": 4
+      },
+      {
+        "candidateId": 1021,
+        "name": "Inara M",
+        "initials": "IM",
+        "thumbnailUrl": "https://w7.pngwing.com/pngs/723/817/png-transparent-lionhead-rabbit-lion-face-mammal-animals-cat-like-mammal-thumbnail.png",
+        "submittedAt": "2021-03-02",
+        "rating": 5
+      },
+      {
+        "candidateId": 1031,
+        "name": "Ari F",
+        "initials": "AF",
+        "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
+        "submittedAt": "2021-03-01",
+        "rating": 3
+      },
+      {
+        "candidateId": 1041,
+        "name": "Zi R",
+        "initials": "ZR",
+        "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
+        "submittedAt": "2021-03-01",
+        "rating": 4.5
+      },
+      {
+        "candidateId": 1051,
+        "name": "Russell G",
+        "initials": "RG",
+        "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
+        "submittedAt": "2021-03-01",
+        "rating": 3.5
+      },
+      {
+        "candidateId": 1061,
+        "name": "Rafael G",
+        "initials": "RG",
+        "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
+        "submittedAt": "2021-03-01",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "submissionId": 3,
+    "jobOrderId": 3,
+    "jobTitle": "Product Manager",
+    "submittedAt": "2021-03-01",
+    "candidates": [
+      {
+        "candidateId": 1012,
+        "name": "Jaya P",
+        "initials": "JP",
+        "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
+        "submittedAt": "2021-03-01",
+        "rating": 4
+      },
+      {
+        "candidateId": 1022,
+        "name": "Erika W",
+        "initials": "EW",
         "thumbnailUrl": "https://w7.pngwing.com/pngs/723/817/png-transparent-lionhead-rabbit-lion-face-mammal-animals-cat-like-mammal-thumbnail.png",
         "submittedAt": "2021-03-02",
         "rating": 5

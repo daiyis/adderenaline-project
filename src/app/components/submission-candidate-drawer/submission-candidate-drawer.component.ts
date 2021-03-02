@@ -18,7 +18,7 @@ import { SubmissionService } from '../../services';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SubmissionCandidateDrawerComponent implements OnInit {
-  @Input() submissionId: number;
+  @Input() jobOrderId: number;
   @Input() candidateId: number;
 
   @Output() visibleChange = new EventEmitter<boolean>();
@@ -28,19 +28,14 @@ export class SubmissionCandidateDrawerComponent implements OnInit {
 
   subscriptions: Subscription[] = [];
 
-  constructor(
-    private submissionService: SubmissionService,
-    private cdRef: ChangeDetectorRef
-  ) {}
+  constructor(private submissionService: SubmissionService, private cdRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     this.subscriptions.push(
-      this.submissionService
-        .getCandidateBasedOnSubmission(this.submissionId, this.candidateId)
-        .subscribe((candidate) => {
-          this.candidate = candidate;
-          this.cdRef.markForCheck();
-        })
+      this.submissionService.getCandidateBasedOnJob(this.jobOrderId, this.candidateId).subscribe((candidate) => {
+        this.candidate = candidate;
+        this.cdRef.markForCheck();
+      })
     );
   }
 

@@ -12,22 +12,19 @@ export class SubmissionService {
 
   submissionsUrl = 'assets/data/submission-data.json';
 
-  getSubmissionById(submissionId: number): Observable<Submission> {
+  getSubmissionByJobId(jobOrderId: number): Observable<Submission> {
     return this.http.get<Submission[]>(this.submissionsUrl).pipe(
       map((submissions: Submission[]) => {
-        return submissions.filter((x) => x.submissionId === submissionId)[0];
+        return submissions.filter((x) => x.jobOrderId === jobOrderId)[0];
       })
     );
   }
 
-  getCandidateBasedOnSubmission(
-    submissionId: number,
-    candidateId: number
-  ): Observable<Candidate> {
+  getCandidateBasedOnJob(jobOrderId: number, candidateId: number): Observable<Candidate> {
     return this.http.get<Submission[]>(this.submissionsUrl).pipe(
       map((submissions: Submission[]) => {
         return submissions
-          .filter((x) => x.submissionId === submissionId)[0]
+          .filter((x) => x.jobOrderId === jobOrderId)[0]
           .candidates.filter((x) => x.candidateId === candidateId)[0];
       })
     );

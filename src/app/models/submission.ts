@@ -1,5 +1,7 @@
 export interface Submission {
   submissionId: number;
+  jobOrderId: number;
+  jobTitle: string;
   submittedAt: Date;
   candidates: Candidate[];
 }

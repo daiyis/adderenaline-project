@@ -5,6 +5,10 @@ nz-card {
   clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
 }
 
+.statistic-card {
+  width: 250px;
+}
+
 ::ng-deep .ant-statistic-title {
   font-size: 16px;
   line-height: 18px;

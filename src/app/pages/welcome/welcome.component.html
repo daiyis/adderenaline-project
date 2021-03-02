@@ -1,4 +1,4 @@
-<app-submission-dashboard (openLink)="open()"></app-submission-dashboard>
+<app-submission-dashboard (openLink)="open($event)"></app-submission-dashboard>
 
 <!-- <div class="buttons">
   <button nz-button nzType="primary" (click)="open()">Submission 1</button>
@@ -9,6 +9,6 @@
 <app-submission-drawer
   *ngIf="submissionDrawerVisible"
   (visibleChange)="closeDrawer($event)"
-  [submissionId]="1"
-  jobTitle="Software Engineer"
+  [jobOrderId]="jobOrderId"
+  jobTitle="Business Analyst"
 ></app-submission-drawer>

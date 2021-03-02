@@ -7,13 +7,16 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WelcomeComponent implements OnInit {
+  jobOrderId: number = 0;
+
   constructor() {}
 
   ngOnInit() {}
 
   submissionDrawerVisible = false;
 
-  open(): void {
+  open($event: number): void {
+    this.jobOrderId = $event;
     this.submissionDrawerVisible = true;
   }
 

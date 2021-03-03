@@ -55,7 +55,6 @@ export class SubmissionDrawerComponent implements OnInit {
   ngOnInit(): void {
     this.subscriptions.push(
       this.submissionService.getSubmissionByJobId(this.jobOrderId).subscribe((submission) => {
-        console.log('Submissionnn', submission);
         this.submission = submission;
         this.jobTitle = submission.jobTitle;
         this.cdRef.markForCheck();

@@ -1,11 +1,4 @@
-import {
-  Component,
-  Input,
-  Output,
-  EventEmitter,
-  OnInit,
-  ChangeDetectionStrategy,
-} from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { NzUploadChangeParam } from 'ng-zorro-antd/upload';
 
 @Component({
@@ -30,9 +23,7 @@ export class HeadshotComponent implements OnInit {
   isFullViewVisible: boolean;
   dragCounter: number;
 
-  ngOnInit(): void {
-    console.log('aaaaaa', this.imageThumbnailUrl, this.initials);
-  }
+  ngOnInit(): void {}
 
   onImageLoadError() {
     this.imageNotFound = true;

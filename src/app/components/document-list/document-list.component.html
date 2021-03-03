@@ -1,0 +1,27 @@
+<nz-table #documentsTable *ngIf="documents" [nzData]="documents">
+  <thead>
+    <tr>
+      <th
+        *ngFor="let column of listOfColumns"
+        [nzSortOrder]="column.sortOrder"
+        [nzSortFn]="column.sortFn"
+        [nzSortDirections]="column.sortDirections"
+        [nzFilterMultiple]="column.filterMultiple"
+        [nzFilters]="column.listOfFilter"
+        [nzFilterFn]="column.filterFn"
+      >
+        {{ column.name }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let document of documentsTable.data">
+      <td>{{ document.documentType }}</td>
+      <td>
+        <a [href]="document.documentUrl" target="_blank" download>{{ document.documentName }}</a>
+      </td>
+      <td>{{ document.expiry | date: 'shortDate' }}</td>
+      <td>{{ document.uploaded | date: 'shortDate' }}</td>
+    </tr>
+  </tbody>
+</nz-table>

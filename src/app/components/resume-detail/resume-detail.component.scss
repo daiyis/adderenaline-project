@@ -1,0 +1,36 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.candidate-resume {
+  height: 100%;
+
+  .candidate-resume-header {
+    justify-content: space-between;
+    padding: 0 24px 16px 24px;
+    border-bottom: 1px solid $jobadder-grey-sky-3;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .zoom-control {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    margin-top: 12px;
+  }
+
+  .viewer-container {
+    // bg-color of pdf container
+    background-color: rgb(224, 224, 224);
+    height: 100%;
+
+    iframe {
+      margin: auto;
+      height: 100%;
+    }
+  }
+}

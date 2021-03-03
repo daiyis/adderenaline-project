@@ -26,6 +26,8 @@ export class SubmissionCandidateDrawerComponent implements OnInit {
   visible: boolean = false;
   candidate: Candidate;
 
+  fullView = false;
+
   subscriptions: Subscription[] = [];
 
   constructor(private submissionService: SubmissionService, private cdRef: ChangeDetectorRef) {}

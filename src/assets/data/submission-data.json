@@ -11,7 +11,51 @@
         "initials": "CK",
         "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
         "submittedAt": "2021-03-01",
-        "rating": 4
+        "rating": 4,
+        "resume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "formattedResume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "documents": [
+          {
+            "documentId": 1010,
+            "documentType": "Cover letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1020,
+            "documentType": "Education certificate",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1030,
+            "documentType": "Experience Letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1040,
+            "documentType": "Screening and Assessment",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1050,
+            "documentType": "Work Rights",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          }
+        ]
       },
       {
         "candidateId": 102,
@@ -19,7 +63,51 @@
         "initials": "LH",
         "thumbnailUrl": "https://w7.pngwing.com/pngs/723/817/png-transparent-lionhead-rabbit-lion-face-mammal-animals-cat-like-mammal-thumbnail.png",
         "submittedAt": "2021-03-02",
-        "rating": 5
+        "rating": 5,
+        "resume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "formattedResume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "documents": [
+          {
+            "documentId": 1011,
+            "documentType": "Cover letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1021,
+            "documentType": "Education certificate",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1031,
+            "documentType": "Experience Letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1041,
+            "documentType": "Screening and Assessment",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1051,
+            "documentType": "Work Rights",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          }
+        ]
       }
     ]
   },
@@ -35,7 +123,51 @@
         "initials": "NG",
         "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
         "submittedAt": "2021-03-01",
-        "rating": 4
+        "rating": 4,
+        "resume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "formattedResume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "documents": [
+          {
+            "documentId": 1012,
+            "documentType": "Cover letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1022,
+            "documentType": "Education certificate",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1032,
+            "documentType": "Experience Letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1042,
+            "documentType": "Screening and Assessment",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1052,
+            "documentType": "Work Rights",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          }
+        ]
       },
       {
         "candidateId": 1021,
@@ -43,7 +175,51 @@
         "initials": "IM",
         "thumbnailUrl": "https://w7.pngwing.com/pngs/723/817/png-transparent-lionhead-rabbit-lion-face-mammal-animals-cat-like-mammal-thumbnail.png",
         "submittedAt": "2021-03-02",
-        "rating": 5
+        "rating": 5,
+        "resume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "formattedResume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "documents": [
+          {
+            "documentId": 1013,
+            "documentType": "Cover letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1023,
+            "documentType": "Education certificate",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1033,
+            "documentType": "Experience Letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1043,
+            "documentType": "Screening and Assessment",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1053,
+            "documentType": "Work Rights",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          }
+        ]
       },
       {
         "candidateId": 1031,
@@ -51,7 +227,51 @@
         "initials": "AF",
         "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
         "submittedAt": "2021-03-01",
-        "rating": 3
+        "rating": 3,
+        "resume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "formattedResume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "documents": [
+          {
+            "documentId": 1014,
+            "documentType": "Cover letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1024,
+            "documentType": "Education certificate",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1034,
+            "documentType": "Experience Letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1044,
+            "documentType": "Screening and Assessment",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1054,
+            "documentType": "Work Rights",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          }
+        ]
       },
       {
         "candidateId": 1041,
@@ -59,7 +279,51 @@
         "initials": "ZR",
         "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
         "submittedAt": "2021-03-01",
-        "rating": 4.5
+        "rating": 4.5,
+        "resume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "formattedResume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "documents": [
+          {
+            "documentId": 1015,
+            "documentType": "Cover letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1025,
+            "documentType": "Education certificate",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1035,
+            "documentType": "Experience Letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1045,
+            "documentType": "Screening and Assessment",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1055,
+            "documentType": "Work Rights",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          }
+        ]
       },
       {
         "candidateId": 1051,
@@ -67,7 +331,51 @@
         "initials": "RG",
         "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
         "submittedAt": "2021-03-01",
-        "rating": 3.5
+        "rating": 3.5,
+        "resume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "formattedResume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "documents": [
+          {
+            "documentId": 1016,
+            "documentType": "Cover letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1026,
+            "documentType": "Education certificate",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1036,
+            "documentType": "Experience Letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1046,
+            "documentType": "Screening and Assessment",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1056,
+            "documentType": "Work Rights",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          }
+        ]
       },
       {
         "candidateId": 1061,
@@ -75,7 +383,51 @@
         "initials": "RG",
         "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
         "submittedAt": "2021-03-01",
-        "rating": 3
+        "rating": 3,
+        "resume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "formattedResume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "documents": [
+          {
+            "documentId": 1017,
+            "documentType": "Cover letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1027,
+            "documentType": "Education certificate",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1037,
+            "documentType": "Experience Letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1047,
+            "documentType": "Screening and Assessment",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1057,
+            "documentType": "Work Rights",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          }
+        ]
       }
     ]
   },
@@ -91,7 +443,51 @@
         "initials": "JP",
         "thumbnailUrl": "https://thumbs.dreamstime.com/b/best-quality-illustration-famous-superman-logo-isolated-transparent-background-high-detailed-original-version-104743115.jpg",
         "submittedAt": "2021-03-01",
-        "rating": 4
+        "rating": 4,
+        "resume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "formattedResume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "documents": [
+          {
+            "documentId": 1018,
+            "documentType": "Cover letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1028,
+            "documentType": "Education certificate",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1038,
+            "documentType": "Experience Letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1048,
+            "documentType": "Screening and Assessment",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1058,
+            "documentType": "Work Rights",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          }
+        ]
       },
       {
         "candidateId": 1022,
@@ -99,7 +495,51 @@
         "initials": "EW",
         "thumbnailUrl": "https://w7.pngwing.com/pngs/723/817/png-transparent-lionhead-rabbit-lion-face-mammal-animals-cat-like-mammal-thumbnail.png",
         "submittedAt": "2021-03-02",
-        "rating": 5
+        "rating": 5,
+        "resume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "formattedResume": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "documents": [
+          {
+            "documentId": 1019,
+            "documentType": "Cover letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1029,
+            "documentType": "Education certificate",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1039,
+            "documentType": "Experience Letter",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1049,
+            "documentType": "Screening and Assessment",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          },
+          {
+            "documentId": 1059,
+            "documentType": "Work Rights",
+            "documentName": "Sample PDF",
+            "documentUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "expiry": "2021-03-31",
+            "uploaded": "2021-02-26"
+          }
+        ]
       }
     ]
   }

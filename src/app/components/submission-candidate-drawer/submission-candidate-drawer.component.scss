@@ -1,5 +1,14 @@
 @import '../../../styles/_variables.scss';
 
+.drawer-container {
+  height: 85%;
+}
+
+nz-tabset,
+::ng-deep .ant-tabs-content {
+  height: 100%;
+}
+
 .detail-view-header {
   display: flex;
   align-items: center;
@@ -41,6 +50,7 @@
 .details-body {
   margin-right: 16px;
   margin-left: 16px;
+  height: 100%;
 }
 
 .description {

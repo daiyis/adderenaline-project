@@ -18,19 +18,28 @@
           </div>
         </div>
         <div class="header-content">
-          <div class="talent-profiles">Talent Profiles</div>
-          <div class="search">
-            <span
-              ><nz-input-group [nzPrefix]="prefixIconSearch">
-                <input type="text" nz-input placeholder="Search" />
-              </nz-input-group>
-              <ng-template #prefixIconSearch>
-                <i nz-icon nzType="search"></i>
-              </ng-template>
-            </span>
+          <div class="header-content-left">
+            <div class="talent-profiles">Talent Profiles</div>
+            <div class="search">
+              <span
+                ><nz-input-group [nzPrefix]="prefixIconSearch">
+                  <input type="text" nz-input placeholder="Search" />
+                </nz-input-group>
+                <ng-template #prefixIconSearch>
+                  <i nz-icon nzType="search"></i>
+                </ng-template>
+              </span>
+              <span>
+                <button nz-button nzType="default" class="default">
+                  <i nz-icon class="icon" nzType="filter" nzTheme="outline"></i> Filter
+                </button>
+              </span>
+            </div>
+          </div>
+          <div class="header-content-right">
             <span>
               <button nz-button nzType="default" class="default">
-                <i nz-icon class="icon" nzType="filter" nzTheme="outline"></i> Filter
+                <i nz-icon class="icon" nzType="sort-ascending" nzTheme="outline"></i> Sort
               </button>
             </span>
           </div>

@@ -98,12 +98,22 @@ button {
   padding: 0 0 0 40px;
   color: white;
   line-height: 40px;
+  display: flex;
 
   .talent-profiles {
     font-size: 26px;
     color: white;
     margin: 0;
     padding: 0 0 8px 0;
+  }
+
+  .header-content-left {
+    margin-right: auto;
+  }
+
+  .header-content-right {
+    margin-left: auto;
+    margin-top: auto;
   }
 }
 

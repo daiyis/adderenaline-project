@@ -4,6 +4,7 @@ import {
   Component,
   EventEmitter,
   Input,
+  OnDestroy,
   OnInit,
   Output,
 } from '@angular/core';
@@ -17,7 +18,7 @@ import { SubmissionService } from '../../services/submission.service';
   styleUrls: ['./submission-drawer.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SubmissionDrawerComponent implements OnInit {
+export class SubmissionDrawerComponent implements OnInit, OnDestroy {
   @Input() jobOrderId: number;
   @Output() visibleChange = new EventEmitter<boolean>();
 

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { Candidate } from '../models';
 
 @Injectable({
@@ -13,5 +14,13 @@ export class CandidateService {
 
   getCandidates(): Observable<Candidate[]> {
     return this.http.get<Candidate[]>(this.candidatesUrl);
+  }
+
+  getCandidateById(candidateId: number): Observable<Candidate> {
+    return this.http.get<Candidate[]>(this.candidatesUrl).pipe(
+      map((submissions: Candidate[]) => {
+        return submissions.filter((x) => x.id === candidateId)[0];
+      })
+    );
   }
 }

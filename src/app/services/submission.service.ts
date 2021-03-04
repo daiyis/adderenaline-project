@@ -25,7 +25,7 @@ export class SubmissionService {
       map((submissions: Submission[]) => {
         return submissions
           .filter((x) => x.jobOrderId === jobOrderId)[0]
-          .candidates.filter((x) => x.candidateId === candidateId)[0];
+          .candidates.filter((x) => x.id === candidateId)[0];
       })
     );
   }

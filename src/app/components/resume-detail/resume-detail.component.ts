@@ -59,8 +59,8 @@ export class ResumeDetailComponent implements OnInit, OnChanges, OnDestroy {
       this.resumeZoom = this.formattedResumeZoom = 60;
     }
 
-    this.resumeViewUrl = this.candidate.resume;
-    this.formattedResumeViewUrl = this.candidate.formattedResume;
+    this.resumeViewUrl = this.candidate.resumeUri;
+    this.formattedResumeViewUrl = this.candidate.resumeUri;
 
     this.cdRef.markForCheck();
   }
@@ -88,9 +88,9 @@ export class ResumeDetailComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   initResumeUrl() {
-    if (!this.candidate.resume && this.candidate.formattedResume && this.mode === 'original') {
+    if (!this.candidate.resumeUri && this.mode === 'original') {
       this.mode = 'formatted';
-    } else if (this.candidate.resume && !this.candidate.formattedResume && this.mode === 'formatted') {
+    } else if (this.candidate.resumeUri && this.mode === 'formatted') {
       this.mode = 'original';
     }
   }

@@ -37,7 +37,7 @@ export class SubmissionDrawerComponent implements OnInit {
     {
       name: 'Name',
       sortOrder: null,
-      sortFn: (a: Candidate, b: Candidate) => a.name.localeCompare(b.name),
+      sortFn: (a: Candidate, b: Candidate) => a.fullName.localeCompare(b.fullName),
     },
     {
       name: 'Submitted',

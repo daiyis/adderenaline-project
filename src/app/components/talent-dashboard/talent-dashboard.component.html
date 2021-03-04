@@ -1,0 +1,5 @@
+<div nz-row [nzGutter]="48">
+  <div nz-col class="card-container" [nzSpan]="8" *ngFor="let candidate of candidates">
+    <app-candidate-card [candidate]="candidate"> </app-candidate-card>
+  </div>
+</div>

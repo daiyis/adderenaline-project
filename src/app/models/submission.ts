@@ -21,4 +21,6 @@ export interface Candidate {
   location: string;
   currentEmployer: string;
   rating: number;
+  salaryMinValue: number;
+  salaryMaxValue: number;
 }

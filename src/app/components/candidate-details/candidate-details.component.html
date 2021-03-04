@@ -35,7 +35,25 @@
     </div>
   </div>
   <div class="candidate-details-body">
-    <div class="candidate-details-left">left</div>
-    <div class="candidate-details-right">right</div>
+    <div class="candidate-details-left">
+      <div class="heading">Summary</div>
+      <div class="description" [innerHTML]="candidate.summary"></div>
+
+      <div class="heading">Category</div>
+      <div class="description">
+        {{ candidate.position }} <br />
+        {{ candidate.industry }}
+      </div>
+
+      <div class="heading">Salary Expectation</div>
+      <div class="description">$100,000 - $150,000</div>
+
+      <div class="heading">Availability</div>
+      <div class="description">{{ candidate.availability }}</div>
+    </div>
+    <div class="candidate-details-right">
+      <div class="heading">Resume</div>
+      <div></div>
+    </div>
   </div>
 </div>

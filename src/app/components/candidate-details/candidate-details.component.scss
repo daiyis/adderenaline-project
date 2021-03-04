@@ -8,6 +8,7 @@
   .candidate-details-header {
     display: flex;
     padding: 24px 48px;
+    border-bottom: 1px solid #dcd0e8;
 
     .candidate-details-header-left {
       margin-right: auto;
@@ -68,6 +69,23 @@
       border-right: 1px solid #f0f2f5;
       padding: 24px 48px;
       width: 50%;
+
+      .heading {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        color: #222b3d;
+        margin-bottom: 8px;
+      }
+
+      .description {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #666e7d;
+        margin-bottom: 32px;
+      }
     }
 
     .candidate-details-right {

@@ -1,4 +1,10 @@
-<nz-card [nzTitle]="candidate.fullName">
-  <p>{{ candidate.position }}</p>
-  <p>{{ candidate.location }}</p>
+<nz-card class="candidate-card">
+  <div class="candidate-name-container">
+    <div class="candidate-name">{{ candidate.fullName }}</div>
+    <div class="favorite">
+      <i nz-icon nzType="heart" [nzTheme]="isFavorite ? 'fill' : 'outline'" (click)="toggleFavorite()"></i>
+    </div>
+  </div>
+  <div class="candidate-position">{{ candidate.position }}</div>
+  <div>{{ candidate.location }}</div>
 </nz-card>

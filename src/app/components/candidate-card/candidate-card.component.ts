@@ -10,9 +10,15 @@ import { Candidate } from '../../models';
 export class CandidateCardComponent implements OnInit {
   @Input() candidate: Candidate;
 
+  isFavorite: boolean = false;
+
   constructor(private cdRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     console.log('Candidate', this.candidate);
+  }
+
+  toggleFavorite() {
+    this.isFavorite = !this.isFavorite;
   }
 }

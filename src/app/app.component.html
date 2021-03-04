@@ -17,7 +17,7 @@
             </button>
           </div>
         </div>
-        <div class="header-content">
+        <div class="header-content" *ngIf="router.url.includes('candidate') === false">
           <div class="header-content-left">
             <div class="talent-profiles">Talent Profiles</div>
             <div class="search">
@@ -38,6 +38,9 @@
           </div>
           <div class="header-content-right">
             <span>
+              <button nz-button nzType="default" class="default">
+                <i nz-icon class="icon" nzType="calendar" nzTheme="outline"></i> Availability
+              </button>
               <button nz-button nzType="default" class="default">
                 <i nz-icon class="icon" nzType="sort-ascending" nzTheme="outline"></i> Sort
               </button>

@@ -1,21 +1,60 @@
-div {
+@import '../../../styles/_mixins.scss';
+
+.row {
   padding-bottom: 8px;
 }
 
 .candidate-name-container {
   display: flex;
   font-size: 24px;
-}
 
-.candidate-name {
-  margin-right: auto;
-}
+  .candidate-name {
+    margin-right: auto;
+  }
 
-.favorite {
-  color: red;
-  margin-left: auto;
+  .favorite {
+    color: red;
+    margin-left: auto;
+  }
 }
 
 .candidate-position {
   font-size: 18px;
+}
+
+.candidate-summary {
+  @include clamp-text(3);
+}
+
+.candidate-card-footer {
+  display: flex;
+  padding-top: 16px;
+  border-top: 1px solid;
+
+  .engage {
+    margin-right: auto;
+  }
+
+  .rating {
+    margin-left: auto;
+  }
+}
+
+::ng-deep nz-rate {
+  &.app-rate {
+    color: #e29223;
+
+    .ant-rate {
+      font-size: 18px;
+    }
+
+    .ant-rate-star:not(:last-child) {
+      margin-right: 4px;
+    }
+
+    .ant-rate-star-focused,
+    .ant-rate-star:hover {
+      transform: none;
+    }
+  }
 }

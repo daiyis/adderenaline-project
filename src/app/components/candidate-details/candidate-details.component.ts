@@ -30,6 +30,7 @@ export class CandidateDetailsComponent implements OnInit, OnDestroy {
     this.subscriptions.push(
       this.candidateService.getCandidateById(this.candidateId).subscribe((candidate) => {
         this.candidate = candidate;
+        console.log('Candidate', this.candidate);
         this.cdRef.markForCheck();
       })
     );

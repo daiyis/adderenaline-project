@@ -8,9 +8,9 @@ import {
   OnChanges,
   OnDestroy,
 } from '@angular/core';
-import { Observable, Subject, Subscription } from 'rxjs';
-import { CandidateAttachmentType } from '../../enums/candidate-attachment-type';
-import { Candidate } from '../../models';
+import { Subject, Subscription } from 'rxjs';
+import { CandidateAttachmentType } from '../../../enums/candidate-attachment-type';
+import { Candidate } from '../../../models';
 
 @Component({
   selector: 'app-resume-detail',
@@ -23,51 +23,31 @@ export class ResumeDetailComponent implements OnInit, OnChanges, OnDestroy {
   @Input() fullView: boolean;
 
   AttachmentType = CandidateAttachmentType;
-  mode: 'original' | 'formatted' = 'original';
-  // iframeLoaded: boolean;
 
   resumeViewUrl: string;
-  formattedResumeViewUrl: string;
 
   resumeZoom = 100; // %
-  formattedResumeZoom = 100;
 
   resumeZoomChange = new Subject();
   enlargeForPushing: number = 1.1;
   subscriptions: Subscription[] = [];
-
-  get updateSettingsModel(): any {
-    return [
-      {
-        type: CandidateAttachmentType.Resume,
-        zoom: this.resumeZoom,
-      },
-      {
-        type: CandidateAttachmentType.FormattedResume,
-        zoom: this.formattedResumeZoom,
-      },
-    ];
-  }
-
   constructor(private cdRef: ChangeDetectorRef) {}
 
   ngOnInit() {
-    this.mode = 'original';
     this.cdRef.markForCheck();
 
     if (this.fullView) {
-      this.resumeZoom = this.formattedResumeZoom = 60;
+      this.resumeZoom = 60;
     }
 
+    console.log('Resume', this.candidate.resumeUri);
+
     this.resumeViewUrl = this.candidate.resumeUri;
-    this.formattedResumeViewUrl = this.candidate.resumeUri;
 
     this.cdRef.markForCheck();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.initResumeUrl();
-
     this.cdRef.markForCheck();
   }
 
@@ -77,7 +57,6 @@ export class ResumeDetailComponent implements OnInit, OnChanges, OnDestroy {
 
   onIframeLoad(evt: any) {
     if (evt.target.src) {
-      // this.iframeLoaded = true;
       this.cdRef.markForCheck();
     }
   }
@@ -87,20 +66,9 @@ export class ResumeDetailComponent implements OnInit, OnChanges, OnDestroy {
     this.subscriptions.forEach((s) => s.unsubscribe);
   }
 
-  initResumeUrl() {
-    if (!this.candidate.resumeUri && this.mode === 'original') {
-      this.mode = 'formatted';
-    } else if (this.candidate.resumeUri && this.mode === 'formatted') {
-      this.mode = 'original';
-    }
-  }
+  onResumeZoom(zoom: number) {
+    this.resumeZoom = zoom;
 
-  onResumeZoom(zoom: number, isFormatted: boolean = false) {
-    if (isFormatted) {
-      this.formattedResumeZoom = zoom;
-    } else {
-      this.resumeZoom = zoom;
-    }
     this.cdRef.markForCheck();
     this.resumeZoomChange.next();
   }

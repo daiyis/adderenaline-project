@@ -1,0 +1,21 @@
+<div *ngIf="candidate" class="candidate-resume r-candidate-detail-resume">
+  <ng-container>
+    <ng-container *ngIf="candidate.resumeUri; else noResumeTpl">
+      <div class="viewer-container">
+        <iframe
+          *ngIf="resumeViewUrl"
+          [style.width]="resumeZoom * enlargeForPushing + '%'"
+          [style.height]="'100%'"
+          [src]="resumeViewUrl | safeResourceUrl"
+          (load)="onIframeLoad($event)"
+        ></iframe>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
+
+<ng-template #noResumeTpl>
+  <div class="upload-area-body">
+    <span class="txt-empty-document">This candidate does not have a resume uploaded</span>
+  </div>
+</ng-template>

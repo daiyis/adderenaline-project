@@ -1,5 +1,5 @@
-@import '../../../styles/variables';
-@import '../../../styles/mixins';
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
 
 .candidate-resume {
   height: 100%;
@@ -32,5 +32,12 @@
       margin: auto;
       height: 100%;
     }
+  }
+
+  .txt-empty-document {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666e7d;
   }
 }

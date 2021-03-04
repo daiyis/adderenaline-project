@@ -32,8 +32,9 @@
 
 .logo {
   position: relative;
-  height: 50px;
-  padding-left: 24px;
+  //height: 50px;
+  padding-left: 40px;
+  //padding-bottom: 10px;
   overflow: hidden;
   //line-height: 64px;
   transition: all 0.3s;
@@ -41,8 +42,6 @@
 
 .logo img {
   display: inline-block;
-  height: 50px;
-  width: 100px;
   vertical-align: middle;
 }
 
@@ -81,7 +80,7 @@ nz-header {
 
   .logo {
     margin-right: auto;
-    font-size: 20px;
+    font-size: 48px;
   }
 
   .action-buttons {
@@ -101,7 +100,7 @@ button {
   line-height: 40px;
 
   .talent-profiles {
-    font-size: 28px;
+    font-size: 26px;
     color: white;
     margin: 0;
     padding: 0 0 8px 0;

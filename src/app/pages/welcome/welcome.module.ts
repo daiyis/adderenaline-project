@@ -16,6 +16,7 @@ import { ZoomToggleComponent } from '../../components/zoom-toggle/zoom-toggle.co
 import { DocumentListComponent } from '../../components/document-list/document-list.component';
 import { TalentDashboardComponent } from '../../components/talent-dashboard/talent-dashboard.component';
 import { CandidateCardComponent } from '../../components/candidate-card/candidate-card.component';
+import { CandidateDetailsComponent } from '../../components/candidate-details/candidate-details.component';
 import { SafeResourceUrlPipe } from '../../pipes';
 
 @NgModule({
@@ -33,6 +34,7 @@ import { SafeResourceUrlPipe } from '../../pipes';
     DocumentListComponent,
     TalentDashboardComponent,
     CandidateCardComponent,
+    CandidateDetailsComponent,
   ],
   exports: [WelcomeComponent],
 })

@@ -13,6 +13,7 @@ import { CandidateService } from '../../services/candidate.service';
 export class CandidateDetailsComponent implements OnInit, OnDestroy {
   candidateId: number;
   candidate: Candidate;
+  isFavorite: boolean = false;
 
   subscriptions: Subscription[] = [];
 
@@ -38,5 +39,9 @@ export class CandidateDetailsComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.subscriptions.forEach((s) => s.unsubscribe);
+  }
+
+  toggleFavorite() {
+    this.isFavorite = !this.isFavorite;
   }
 }

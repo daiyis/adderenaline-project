@@ -16,7 +16,11 @@ export class CandidateCardComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.candidate) {
+      this.candidate.rating = Math.floor(Math.random() * 4);
+    }
+  }
 
   toggleFavorite() {
     this.isFavorite = !this.isFavorite;

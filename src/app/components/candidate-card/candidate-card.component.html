@@ -1,22 +1,49 @@
 <nz-card class="candidate-card">
   <div class="row candidate-name-container">
-    <div class="candidate-name">{{ candidate.fullName }}</div>
+    <div class="candidate-name">
+      <div class="detail-view-header r-s-header">
+        <app-headshot
+          class="headshot-48"
+          [initials]="candidate.initials"
+          [imageThumbnailUrl]="candidate.photoUrl"
+          [imageUrl]="candidate.photoUrl"
+        ></app-headshot>
+        <div class="ml-16">
+          <div class="title">
+            {{ candidate.shortName }}
+          </div>
+          <div class="subTitle">{{ candidate.position }}</div>
+        </div>
+      </div>
+    </div>
     <div class="favorite">
-      <i nz-icon nzType="heart" [nzTheme]="isFavorite ? 'fill' : 'outline'" (click)="toggleFavorite()"></i>
+      <i
+        nz-icon
+        nzType="heart"
+        [class.is-favorite]="isFavorite"
+        [class.not-favorite]="!isFavorite"
+        nzTheme="fill"
+        (click)="toggleFavorite()"
+      ></i>
     </div>
   </div>
-  <div class="row candidate-position">{{ candidate.position }}</div>
   <div class="row candidate-summary">
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-    remaining essentially unchanged.
+    <span *ngIf="candidate.summary">{{ candidate.summary }}</span>
+    <span *ngIf="!candidate.summary"
+      >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+      type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+      remaining essentially unchanged.</span
+    >
   </div>
-  <div class="row">{{ candidate.location }}</div>
   <div class="candidate-card-footer">
-    <div class="engage"><button nz-button nzType="default">Engage</button></div>
+    <div class="engage">
+      <button nz-button nzType="default" [class.engaged]="engageButtonText === 'Engaged'" (click)="engageCandidate()">
+        {{ engageButtonText }}
+      </button>
+    </div>
     <div class="rating">
-      <nz-rate class="app-rate" [ngModel]="candidate.rating" nzAllowHalf [nzAllowClear]="false"></nz-rate>
+      <nz-rate class="app-rate" [ngModel]="candidate.rating" [nzCount]="3" [nzAllowClear]="false"></nz-rate>
     </div>
   </div>
 </nz-card>

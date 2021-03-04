@@ -30,31 +30,34 @@
   color: #1890ff;
 }
 
-.sidebar-logo {
+.logo {
   position: relative;
-  height: 96px;
+  height: 50px;
   padding-left: 24px;
   overflow: hidden;
-  line-height: 64px;
-  background: $white;
+  //line-height: 64px;
   transition: all 0.3s;
 }
 
-.sidebar-logo img {
+.logo img {
   display: inline-block;
-  height: 100px;
-  width: 178px;
+  height: 50px;
+  width: 100px;
   vertical-align: middle;
 }
 
-.sidebar-logo h1 {
+.logo span {
   display: inline-block;
   margin: 0 0 0 20px;
-  color: $jobadder-blue-1;
-  font-weight: 600;
-  font-size: 14px;
+  color: $white;
+
   font-family: Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
   vertical-align: middle;
+
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
 }
 
 nz-header {
@@ -65,11 +68,44 @@ nz-header {
 
 .app-header {
   position: relative;
-  height: 200px;
+  height: 210px;
   padding: 0;
-  background: #fff;
+  background: #533aaf;
   box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
   padding: 20px;
+}
+
+.header-top {
+  display: flex;
+  margin-bottom: 24px;
+
+  .logo {
+    margin-right: auto;
+    font-size: 20px;
+  }
+
+  .action-buttons {
+    margin-left: auto;
+  }
+}
+
+button {
+  background: transparent;
+  color: white;
+  margin-right: 12px;
+}
+
+.header-content {
+  padding: 0 0 0 40px;
+  color: white;
+  line-height: 40px;
+
+  .talent-profiles {
+    font-size: 28px;
+    color: white;
+    margin: 0;
+    padding: 0 0 8px 0;
+  }
 }
 
 nz-content {
@@ -83,13 +119,14 @@ nz-content {
 
 .search {
   position: relative;
-  box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
-  background: $jobadder-blue-1;
 
-  margin: 0 0 12px 0;
   nz-input-group {
-    background: $jobadder-blue-1;
-    border: $jobadder-blue-1;
+    background: #7360b9;
+    width: 313px;
+    height: 32px;
+    margin-right: 8px;
+
+    border: $white;
     color: $white;
 
     ::placeholder {
@@ -100,14 +137,13 @@ nz-content {
   }
 
   input {
-    height: 30px;
-    padding-left: 12px;
-    background: $jobadder-blue-1;
+    //height: 30px;
+    background: transparent;
     color: $white;
     font-weight: 600;
   }
+}
 
-  i {
-    padding-left: 12px;
-  }
+.icon {
+  font-size: 16px;
 }

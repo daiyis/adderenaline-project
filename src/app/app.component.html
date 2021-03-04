@@ -31,10 +31,38 @@
   <nz-layout>
     <nz-header>
       <div class="app-header">
-        <!-- <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
-          <i class="trigger" nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"></i>
-        </span> -->
-        Talent Tap
+        <div class="header-top">
+          <div class="logo">
+            <!-- <img src="assets/logo-ipsum.svg" alt="Talent Tap" /> -->
+            <span>EngageTalent</span>
+          </div>
+          <div class="action-buttons">
+            <button nz-button nzType="default" class="default">
+              <i nz-icon class="icon" nzType="heart" nzTheme="fill"></i> View Favourites
+            </button>
+            <button nz-button nzType="default" class="default">
+              <i nz-icon class="icon" nzType="plus" nzTheme="outline"></i> Activities
+            </button>
+          </div>
+        </div>
+        <div class="header-content">
+          <div class="talent-profiles">Talent Profiles</div>
+          <div class="search">
+            <span
+              ><nz-input-group [nzPrefix]="prefixIconSearch">
+                <input type="text" nz-input placeholder="Search" />
+              </nz-input-group>
+              <ng-template #prefixIconSearch>
+                <i nz-icon nzType="search"></i>
+              </ng-template>
+            </span>
+            <span>
+              <button nz-button nzType="default" class="default">
+                <i nz-icon class="icon" nzType="filter" nzTheme="outline"></i> Filter
+              </button>
+            </span>
+          </div>
+        </div>
       </div>
     </nz-header>
     <nz-content>

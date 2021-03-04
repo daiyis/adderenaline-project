@@ -1,7 +1,35 @@
 @import '../../../styles/_mixins.scss';
+@import '../../../styles/_variables.scss';
 
 .row {
   padding-bottom: 8px;
+}
+
+.detail-view-header {
+  display: flex;
+  align-items: center;
+  color: $jobadder-grey-ink-1;
+  font-family: $jobadder-font-family;
+  letter-spacing: -0.2px;
+  line-height: 20px;
+
+  .title {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .subTitle {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.ml-24 {
+  margin-left: 24px;
+}
+
+.ml-16 {
+  margin-left: 16px;
 }
 
 .candidate-name-container {
@@ -13,9 +41,16 @@
   }
 
   .favorite {
-    color: red;
     margin-left: auto;
   }
+}
+
+.is-favorite {
+  color: #dc4175;
+}
+
+.not-favorite {
+  color: #cacfdb;
 }
 
 .candidate-position {
@@ -24,6 +59,7 @@
 
 .candidate-summary {
   @include clamp-text(3);
+  color: $jobadder-grey-ink-3;
 }
 
 .candidate-card-footer {
@@ -42,10 +78,9 @@
 
 ::ng-deep nz-rate {
   &.app-rate {
-    color: #e29223;
-
     .ant-rate {
       font-size: 18px;
+      color: #e29223;
     }
 
     .ant-rate-star:not(:last-child) {
@@ -57,4 +92,10 @@
       transform: none;
     }
   }
+}
+
+.engaged {
+  background: #7360b9;
+  color: $white;
+  border: 0;
 }

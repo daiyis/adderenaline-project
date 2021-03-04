@@ -11,8 +11,12 @@ export interface Submission {
 export interface Candidate {
   id: number;
   fullName: string;
+  shortName: string;
+  initials: string;
   position: string;
+  summary: string;
   thumbnailUrl: string;
+  photoUrl: string;
   resumeUri: string;
   location: string;
   currentEmployer: string;

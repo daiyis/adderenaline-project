@@ -11,6 +11,7 @@ export class CandidateCardComponent implements OnInit {
   @Input() candidate: Candidate;
 
   isFavorite: boolean = false;
+  engageButtonText: string = 'Engage';
 
   constructor(private cdRef: ChangeDetectorRef) {}
 
@@ -20,5 +21,9 @@ export class CandidateCardComponent implements OnInit {
 
   toggleFavorite() {
     this.isFavorite = !this.isFavorite;
+  }
+
+  engageCandidate() {
+    this.engageButtonText = 'Engaged';
   }
 }

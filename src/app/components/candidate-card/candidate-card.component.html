@@ -44,6 +44,13 @@
     </div>
     <div class="rating">
       <nz-rate class="app-rate" [ngModel]="candidate.rating" [nzCount]="3" [nzAllowClear]="false"></nz-rate>
+      <ng-container>
+        <span class="action-icons">
+          <a class="clickable" nz-tooltip nzTooltipTitle="View Candidate" (click)="openCandidateDetails()">
+            <i nz-icon nzType="right"></i>
+          </a>
+        </span>
+      </ng-container>
     </div>
   </div>
 </nz-card>

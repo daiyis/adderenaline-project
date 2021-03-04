@@ -15,7 +15,7 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NgZorroAntdModule } from './nz-zorro.module';
 import { WelcomeModule } from './pages/welcome/welcome.module';
-import { ContactModule } from './pages/contact/contact.module';
+import { CandidateModule } from './pages/candidate/candidate.module';
 
 registerLocaleData(en);
 
@@ -33,7 +33,7 @@ registerLocaleData(en);
     NzMenuModule,
     NgZorroAntdModule,
     WelcomeModule,
-    ContactModule,
+    CandidateModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent],

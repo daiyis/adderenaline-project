@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Candidate } from '../../models';
 
 @Component({
@@ -13,11 +14,9 @@ export class CandidateCardComponent implements OnInit {
   isFavorite: boolean = false;
   engageButtonText: string = 'Engage';
 
-  constructor(private cdRef: ChangeDetectorRef) {}
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-    console.log('Candidate', this.candidate);
-  }
+  ngOnInit(): void {}
 
   toggleFavorite() {
     this.isFavorite = !this.isFavorite;
@@ -25,5 +24,9 @@ export class CandidateCardComponent implements OnInit {
 
   engageCandidate() {
     this.engageButtonText = 'Engaged';
+  }
+
+  openCandidateDetails() {
+    this.router.navigate(['candidate', this.candidate.id]);
   }
 }

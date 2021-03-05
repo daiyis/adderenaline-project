@@ -182,8 +182,10 @@ nz-content {
   }
 }
 
-.news-feed {
+.news-feed,
+.sort-icon {
   padding-left: 0;
+  padding-bottom: 2px;
 
   img {
     height: 18px;

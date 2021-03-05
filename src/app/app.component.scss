@@ -72,6 +72,7 @@ nz-header {
   background: #533aaf;
   box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
   padding: 20px;
+  padding-right: 40px;
 }
 
 .header-top {
@@ -155,4 +156,44 @@ nz-content {
 
 .icon {
   font-size: 16px;
+}
+
+.app-dropdown {
+  padding: 24px;
+  width: 240px;
+
+  label {
+    padding-bottom: 20px;
+    color: #222b3d;
+  }
+
+  .date-label {
+    color: #666e7d;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 8px;
+  }
+
+  .date-selector {
+    color: #222b3d;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 16px;
+  }
+}
+
+.news-feed {
+  padding-left: 0;
+
+  img {
+    height: 18px;
+    width: 24px;
+  }
+}
+
+.date-container {
+  padding-left: 16px;
+  nz-date-picker {
+    width: 100%;
+  }
 }

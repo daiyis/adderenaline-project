@@ -12,8 +12,8 @@
             <button nz-button nzType="default" class="default">
               <i nz-icon class="icon" nzType="heart" nzTheme="fill"></i> Favourites
             </button>
-            <button nz-button nzType="default" class="default">
-              <i nz-icon class="icon" nzType="plus" nzTheme="outline"></i> Activities
+            <button nz-button nzType="default" class="default news-feed">
+              <img src="assets/news-feed-white.svg" onload="SVGInject(this)" /> News Feed
             </button>
           </div>
         </div>
@@ -38,9 +38,40 @@
           </div>
           <div class="header-content-right">
             <span>
-              <button nz-button nzType="default" class="default">
-                <i nz-icon class="icon" nzType="calendar" nzTheme="outline"></i> Availability
+              <button
+                nz-button
+                nz-dropdown
+                nzTrigger="click"
+                nzType="default"
+                class="default"
+                [nzDropdownMenu]="dateSelectorTpl"
+              >
+                <i nz-icon class="icon" nzType="calendar" nzTheme="outline"></i> Available
               </button>
+              <nz-dropdown-menu #dateSelectorTpl="nzDropdownMenu">
+                <ul nz-menu class="app-dropdown r-date-selector">
+                  <li nz-menu-item>
+                    <label nz-checkbox [(ngModel)]="todayChecked">Today</label>
+                  </li>
+                  <li nz-menu-item>
+                    <label nz-checkbox [(ngModel)]="tomorrowChecked">Tomorrow</label>
+                  </li>
+                  <li nz-menu-item>
+                    <label nz-checkbox [(ngModel)]="customChecked">Custom</label>
+                  </li>
+                  <li class="date-container">
+                    <div class="date-label">Start Date</div>
+                    <div class="date-selector">
+                      <nz-date-picker [(ngModel)]="startDate" (ngModelChange)="onChange($event)"></nz-date-picker>
+                    </div>
+                  </li>
+                  <li class="date-container">
+                    <div class="date-label">End Date</div>
+                    <div class="date-selector">
+                      <nz-date-picker [(ngModel)]="endDate" (ngModelChange)="onChange($event)"></nz-date-picker>
+                    </div>
+                  </li></ul
+              ></nz-dropdown-menu>
               <button nz-button nzType="default" class="default">
                 <i nz-icon class="icon" nzType="sort-ascending" nzTheme="outline"></i> Sort
               </button>

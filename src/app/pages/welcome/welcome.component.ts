@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { CandidateService } from 'src/app/services';
 
 @Component({
   selector: 'app-welcome',
@@ -9,7 +10,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 export class WelcomeComponent implements OnInit {
   jobOrderId: number = 0;
 
-  constructor() {}
+  constructor(private candidateService: CandidateService) {}
 
   ngOnInit() {}
 

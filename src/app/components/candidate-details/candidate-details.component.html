@@ -22,7 +22,14 @@
       ></span>
       <span class="buttons">
         <button nz-button nzType="default" class="default">
-          <i nz-icon class="icon" nzType="heart" nzTheme="fill"></i>
+          <i
+            nz-icon
+            nzType="heart"
+            [class.is-favorite]="isFavorite"
+            [class.not-favorite]="!isFavorite"
+            nzTheme="fill"
+            (click)="toggleFavorite()"
+          ></i>
         </button>
         <button nz-button nzType="default" class="default">
           <i nz-icon class="icon" nzType="comment" nzTheme="outline"></i> Comments
@@ -46,7 +53,7 @@
       </div>
 
       <div class="heading">Salary Expectation</div>
-      <div class="description">$100,000 - $150,000</div>
+      <div class="description">${{ candidate.salaryMinValue }} - ${{ candidate.salaryMaxValue }}</div>
 
       <div class="heading">Availability</div>
       <div class="description">{{ candidate.availability }}</div>

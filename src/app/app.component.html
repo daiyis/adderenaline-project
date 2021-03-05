@@ -22,7 +22,7 @@
           <div class="search">
             <span
               ><nz-input-group [nzPrefix]="prefixIconSearch">
-                <input type="text" nz-input placeholder="Search" />
+                <input type="text" nz-input placeholder="Search" (keyup)="searchChanged$.next($event.target.value)" />
               </nz-input-group>
               <ng-template #prefixIconSearch>
                 <i nz-icon nzType="search"></i>
